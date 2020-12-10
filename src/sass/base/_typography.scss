@@ -20,7 +20,7 @@ body {
   letter-spacing: -0.025;
 }
 
-@media (min-width: $breakpoint-desktop) {
+@media (min-width: $breakpoint-tablet) {
   .h1-lg {
     font-size: 20rem;
   }
@@ -43,7 +43,7 @@ h2 {
 }
 
 @media (min-width: $breakpoint-tablet) {
-  .h1-sm {
+  h2 {
     font-size: 5.6rem;
     line-height: 5.6rem;
   }
