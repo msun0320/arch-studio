@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 html,
 body,
 div,
@@ -126,5 +130,182 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: #1b1d23;
+}
+
+.h1-lg {
+  font-family: "Spartan", sans-serif;
+  font-size: 12rem;
+  font-weight: 700;
+  line-height: 20rem;
+  letter-spacing: -0.025;
+}
+
+@media (min-width: 1440px) {
+  .h1-lg {
+    font-size: 20rem;
+  }
+}
+
+.h1-sm {
+  font-family: "Spartan", sans-serif;
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 8rem;
+  letter-spacing: -0.025;
+}
+
+h2 {
+  font-family: "Spartan", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: -0.0357;
+}
+
+@media (min-width: 768px) {
+  .h1-sm {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+  }
+}
+
+h3 {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.text-white {
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: #1b1d23;
+}
+
+.h1-lg {
+  font-family: "Spartan", sans-serif;
+  font-size: 12rem;
+  font-weight: 700;
+  line-height: 20rem;
+  letter-spacing: -0.025;
+}
+
+@media (min-width: 1440px) {
+  .h1-lg {
+    font-size: 20rem;
+  }
+}
+
+.h1-sm {
+  font-family: "Spartan", sans-serif;
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 8rem;
+  letter-spacing: -0.025;
+}
+
+h2 {
+  font-family: "Spartan", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: -0.0357;
+}
+
+@media (min-width: 768px) {
+  .h1-sm {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+  }
+}
+
+h3 {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.text-white {
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: #1b1d23;
+}
+
+.h1-lg {
+  font-family: "Spartan", sans-serif;
+  font-size: 12rem;
+  font-weight: 700;
+  line-height: 20rem;
+  letter-spacing: -0.025;
+}
+
+@media (min-width: 1440px) {
+  .h1-lg {
+    font-size: 20rem;
+  }
+}
+
+.h1-sm {
+  font-family: "Spartan", sans-serif;
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 8rem;
+  letter-spacing: -0.025;
+}
+
+h2 {
+  font-family: "Spartan", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: -0.0357;
+}
+
+@media (min-width: 768px) {
+  .h1-sm {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+  }
+}
+
+h3 {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.text-white {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

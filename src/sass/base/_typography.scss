@@ -1,0 +1,60 @@
+@import '../utilities/variables';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-family;
+  font-size: 1.5rem;
+  font-weight: $weight-medium;
+  line-height: 2.5rem;
+  color: $very-dark-blue;
+}
+
+.h1-lg {
+  font-family: $font-family;
+  font-size: 12rem;
+  font-weight: $weight-bold;
+  line-height: 20rem;
+  letter-spacing: -0.025;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .h1-lg {
+    font-size: 20rem;
+  }
+}
+
+.h1-sm {
+  font-family: $font-family;
+  font-size: 8rem;
+  font-weight: $weight-bold;
+  line-height: 8rem;
+  letter-spacing: -0.025;
+}
+
+h2 {
+  font-family: $font-family;
+  font-size: 4rem;
+  font-weight: $weight-bold;
+  line-height: 4.8rem;
+  letter-spacing: -0.0357;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .h1-sm {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+  }
+}
+
+h3 {
+  font-family: $font-family;
+  font-size: 1.8rem;
+  font-weight: $weight-bold;
+}
+
+.text-white {
+  color: white;
+}
