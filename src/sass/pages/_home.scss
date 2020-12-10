@@ -1,2 +1,20 @@
 @import '../base/reset';
 @import '../base/typography';
+@import '../layout/header';
+
+.container {
+  width: 311 / 375 * 100%;
+  margin: auto;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .container {
+    width: 57.3rem;
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  .container {
+    width: 1110 / 1440 * 100%;
+  }
+}
