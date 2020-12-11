@@ -15,7 +15,7 @@ hamburgerIcon.addEventListener('click', toggleMenu);
 closeIcon.addEventListener('click', toggleMenu);
 
 window.addEventListener('resize', () => {
-  const width = window.screen.availWidth;
+  const width = window.innerWidth;
   const isLargeScreen = width > 768;
 
   menu.style.display = isLargeScreen ? 'block' : 'none';
