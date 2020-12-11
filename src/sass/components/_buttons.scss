@@ -1,0 +1,60 @@
+@import '../utilities/variables';
+
+.btn-text {
+  background: $very-dark-blue;
+  padding: 2.3rem 3.2rem 2.6rem 3.1rem;
+  display: inline-flex;
+  text-decoration: none;
+
+  &:hover {
+    background: $dark-grey;
+  }
+
+  &:active {
+    background: $light-grey;
+  }
+
+  span {
+    margin-right: 2.4rem;
+  }
+
+  img {
+    align-self: flex-end;
+  }
+}
+
+.btn-arrow {
+  width: 8rem;
+  height: 8rem;
+  border: 0;
+  outline: 0;
+  background: $very-dark-blue;
+
+  &:hover {
+    background: $dark-grey;
+  }
+
+  &:active {
+    background: $light-grey;
+  }
+}
+
+.btn-num {
+  width: 8rem;
+  height: 8rem;
+  border: 0;
+  outline: 0;
+  background: white;
+  color: $medium-grey;
+  font-family: $font-family;
+  font-weight: $weight-bold;
+
+  &:hover {
+    background: $very-light-grey;
+  }
+
+  &:active {
+    background: $very-dark-blue;
+    color: white;
+  }
+}
