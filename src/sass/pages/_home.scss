@@ -1,6 +1,7 @@
 @import '../base/reset';
 @import '../base/typography';
 @import '../layout/header';
+@import '../components/slider';
 
 .container {
   width: 311 / 375 * 100%;
@@ -9,12 +10,26 @@
 
 @media (min-width: $breakpoint-tablet) {
   .container {
-    width: 57.3rem;
+    width: 573 / 768 * 100%;
   }
 }
 
 @media (min-width: $breakpoint-laptop) {
   .container {
     width: 1110 / 1440 * 100%;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  #hero {
+    width: 573 / 768 * 100%;
+    margin: auto;
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  #hero {
+    width: 1110 / 1440 * 100%;
+    margin: auto;
   }
 }

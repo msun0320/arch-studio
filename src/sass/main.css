@@ -158,10 +158,17 @@ body {
 
 .h1-sm {
   font-family: "Spartan", sans-serif;
-  font-size: 8rem;
+  font-size: 4.8rem;
   font-weight: 700;
-  line-height: 8rem;
+  line-height: 4.8rem;
   letter-spacing: -0.025;
+}
+
+@media (min-width: 768px) {
+  .h1-sm {
+    font-size: 8rem;
+    line-height: 8rem;
+  }
 }
 
 h2 {
@@ -299,6 +306,137 @@ header nav .nav-links ul li a {
   }
 }
 
+.slider .slider-inner .slider-item {
+  position: relative;
+  display: none;
+}
+
+.slider .slider-inner .slider-item.active {
+  display: block;
+}
+
+.slider .slider-inner .slider-item .slider-bg {
+  height: 56rem;
+}
+
+.slider .slider-inner .slider-item .slider-bg-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../assets/home/mobile/image-hero-paramour.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/home/mobile/image-hero-paramour.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider .slider-inner .slider-item .slider-bg-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../assets/home/mobile/image-hero-seraph.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/home/mobile/image-hero-seraph.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider .slider-inner .slider-item .slider-bg-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../assets/home/mobile/image-hero-federal.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/home/mobile/image-hero-federal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider .slider-inner .slider-item .slider-bg-4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../assets/home/mobile/image-hero-trinity.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/home/mobile/image-hero-trinity.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider .slider-inner .slider-item .slider-content {
+  position: absolute;
+  top: 25%;
+  left: 3.2rem;
+  right: 3.2rem;
+}
+
+.slider .slider-inner .slider-item .slider-content .h1-sm {
+  margin-bottom: 1rem;
+}
+
+.slider .slider-inner .slider-item .slider-content p {
+  min-height: 15.7rem;
+}
+
+.slider .slider-inner .slider-item .slider-content a {
+  background: #1b1d23;
+  padding: 2.3rem 3.2rem 2.6rem 3.1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.slider .slider-inner .slider-item .slider-content a span {
+  margin-right: 2.4rem;
+}
+
+.slider .slider-inner .slider-item .slider-content a img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+  .slider .slider-inner .slider-item .slider-bg {
+    height: 72rem;
+  }
+  .slider .slider-inner .slider-item .slider-bg-1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../assets/home/tablet/image-hero-paramour.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/home/tablet/image-hero-paramour.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slider .slider-inner .slider-item .slider-bg-2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../assets/home/tablet/image-hero-seraph.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/home/tablet/image-hero-seraph.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slider .slider-inner .slider-item .slider-bg-3 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../assets/home/tablet/image-hero-federal.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/home/tablet/image-hero-federal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slider .slider-inner .slider-item .slider-bg-4 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../assets/home/tablet/image-hero-trinity.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/home/tablet/image-hero-trinity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slider .slider-inner .slider-item .slider-content {
+    left: 5.8rem;
+    right: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider .slider-inner .slider-item .slider-bg-1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../assets/home/desktop/image-hero-paramour.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/home/desktop/image-hero-paramour.jpg);
+  }
+  .slider .slider-inner .slider-item .slider-bg-2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../assets/home/desktop/image-hero-seraph.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/home/desktop/image-hero-seraph.jpg);
+  }
+  .slider .slider-inner .slider-item .slider-bg-3 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../assets/home/desktop/image-hero-federal.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/home/desktop/image-hero-federal.jpg);
+  }
+  .slider .slider-inner .slider-item .slider-bg-4 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../assets/home/desktop/image-hero-trinity.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/home/desktop/image-hero-trinity.jpg);
+  }
+  .slider .slider-inner .slider-item .slider-content {
+    left: 19rem;
+    width: 44.5rem;
+  }
+}
+
 .container {
   width: 82.93333%;
   margin: auto;
@@ -306,13 +444,27 @@ header nav .nav-links ul li a {
 
 @media (min-width: 768px) {
   .container {
-    width: 57.3rem;
+    width: 74.60938%;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
     width: 77.08333%;
+  }
+}
+
+@media (min-width: 768px) {
+  #hero {
+    width: 74.60938%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    width: 77.08333%;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */

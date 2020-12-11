@@ -1,0 +1,152 @@
+.slider {
+  .slider-inner {
+    .slider-item {
+      position: relative;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+
+      .slider-bg {
+        height: 56rem;
+      }
+
+      .slider-bg-1 {
+        background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+          url(../assets/home/mobile/image-hero-paramour.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .slider-bg-2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+          url(../assets/home/mobile/image-hero-seraph.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .slider-bg-3 {
+        background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+          url(../assets/home/mobile/image-hero-federal.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .slider-bg-4 {
+        background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+          url(../assets/home/mobile/image-hero-trinity.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .slider-content {
+        position: absolute;
+        top: 25%;
+        left: 3.2rem;
+        right: 3.2rem;
+
+        .h1-sm {
+          margin-bottom: 1rem;
+        }
+
+        p {
+          min-height: 15.7rem;
+        }
+
+        a {
+          background: $very-dark-blue;
+          padding: 2.3rem 3.2rem 2.6rem 3.1rem;
+          display: inline-flex;
+          text-decoration: none;
+
+          span {
+            margin-right: 2.4rem;
+          }
+
+          img {
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .slider {
+    .slider-inner {
+      .slider-item {
+        .slider-bg {
+          height: 72rem;
+        }
+
+        .slider-bg-1 {
+          background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+            url(../assets/home/tablet/image-hero-paramour.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .slider-bg-2 {
+          background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+            url(../assets/home/tablet/image-hero-seraph.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .slider-bg-3 {
+          background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+            url(../assets/home/tablet/image-hero-federal.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .slider-bg-4 {
+          background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+            url(../assets/home/tablet/image-hero-trinity.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .slider-content {
+          left: 5.8rem;
+          right: 20rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  .slider {
+    .slider-inner {
+      .slider-item {
+        .slider-bg-1 {
+          background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+            url(../assets/home/desktop/image-hero-paramour.jpg);
+        }
+
+        .slider-bg-2 {
+          background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+            url(../assets/home/desktop/image-hero-seraph.jpg);
+        }
+
+        .slider-bg-3 {
+          background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+            url(../assets/home/desktop/image-hero-federal.jpg);
+        }
+
+        .slider-bg-4 {
+          background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+            url(../assets/home/desktop/image-hero-trinity.jpg);
+        }
+
+        .slider-content {
+          left: 19rem;
+          width: 44.5rem;
+        }
+      }
+    }
+  }
+}
