@@ -1,4 +1,32 @@
+@import '../utilities/variables';
+
 .slider {
+  position: relative;
+
+  .slider-indicators {
+    position: absolute;
+    bottom: 0;
+    left: -8rem;
+    z-index: 999;
+    display: none;
+
+    ol {
+      display: flex;
+
+      li {
+        .btn-num {
+          border-right: 1px solid $light-grey;
+        }
+
+        &:last-of-type {
+          .btn-num {
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+
   .slider-inner {
     .slider-item {
       position: relative;
@@ -43,8 +71,8 @@
       .slider-content {
         position: absolute;
         top: 25%;
-        left: 3.2rem;
-        right: 3.2rem;
+        width: 311 / 375 * 100%;
+        left: 32 / 375 * 100%;
 
         .h1-sm {
           margin-bottom: 1rem;
@@ -95,8 +123,8 @@
         }
 
         .slider-content {
-          left: 5.8rem;
-          right: 20rem;
+          width: 475 / 573 * 100%;
+          left: 58 / 573 * 100%;
         }
       }
     }
@@ -105,6 +133,10 @@
 
 @media (min-width: $breakpoint-laptop) {
   .slider {
+    .slider-indicators {
+      display: block;
+    }
+
     .slider-inner {
       .slider-item {
         .slider-bg-1 {
@@ -128,8 +160,11 @@
         }
 
         .slider-content {
-          left: 19rem;
-          width: 44.5rem;
+          left: 190 / 1110 * 100%;
+
+          p {
+            width: 44.5rem;
+          }
         }
       }
     }

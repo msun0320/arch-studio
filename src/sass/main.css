@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 html,
 body,
 div,
@@ -210,7 +211,7 @@ header nav {
           align-items: center;
 }
 
-header nav .menu-togglers .close-icon {
+header nav .menu-togglers .icon-close {
   display: none;
 }
 
@@ -307,6 +308,32 @@ header nav .nav-links ul li a {
   }
 }
 
+.slider {
+  position: relative;
+}
+
+.slider .slider-indicators {
+  position: absolute;
+  bottom: 0;
+  left: -8rem;
+  z-index: 999;
+  display: none;
+}
+
+.slider .slider-indicators ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider .slider-indicators ol li .btn-num {
+  border-right: 1px solid #c8ccd8;
+}
+
+.slider .slider-indicators ol li:last-of-type .btn-num {
+  border: 0;
+}
+
 .slider .slider-inner .slider-item {
   position: relative;
   display: none;
@@ -351,8 +378,8 @@ header nav .nav-links ul li a {
 .slider .slider-inner .slider-item .slider-content {
   position: absolute;
   top: 25%;
-  left: 3.2rem;
-  right: 3.2rem;
+  width: 82.93333%;
+  left: 8.53333%;
 }
 
 .slider .slider-inner .slider-item .slider-content .h1-sm {
@@ -392,12 +419,15 @@ header nav .nav-links ul li a {
     background-size: cover;
   }
   .slider .slider-inner .slider-item .slider-content {
-    left: 5.8rem;
-    right: 20rem;
+    width: 82.89703%;
+    left: 10.12216%;
   }
 }
 
 @media (min-width: 1024px) {
+  .slider .slider-indicators {
+    display: block;
+  }
   .slider .slider-inner .slider-item .slider-bg-1 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../assets/home/desktop/image-hero-paramour.jpg);
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/home/desktop/image-hero-paramour.jpg);
@@ -415,7 +445,9 @@ header nav .nav-links ul li a {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/home/desktop/image-hero-trinity.jpg);
   }
   .slider .slider-inner .slider-item .slider-content {
-    left: 19rem;
+    left: 17.11712%;
+  }
+  .slider .slider-inner .slider-item .slider-content p {
     width: 44.5rem;
   }
 }
@@ -477,7 +509,7 @@ header nav .nav-links ul li a {
   background: #eeeff4;
 }
 
-.btn-num:active {
+.btn-num.active {
   background: #1b1d23;
   color: white;
 }
