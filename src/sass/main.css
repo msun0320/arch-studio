@@ -659,6 +659,46 @@ footer nav .btn-text {
   }
 }
 
+.card {
+  position: relative;
+}
+
+.card .h1-lg {
+  opacity: 0.5;
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 20rem;
+  display: none;
+}
+
+.card .project-caption {
+  position: absolute;
+  bottom: 3.3rem;
+  left: 2.4rem;
+}
+
+.card .project-caption p {
+  opacity: 0.75;
+}
+
+@media (min-width: 768px) {
+  .card .h1-lg {
+    display: block;
+  }
+  .card .project-caption {
+    bottom: 4.9rem;
+    left: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card .h1-lg {
+    top: 2.7rem;
+    right: -1.5rem;
+  }
+}
+
 body {
   max-width: 1440px;
   margin: auto;
@@ -837,44 +877,21 @@ body {
   gap: 2.4rem;
 }
 
-#featured .featured-projects .featured-project {
-  position: relative;
-}
-
-#featured .featured-projects .featured-project .h1-lg {
-  opacity: 0.5;
-  position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 20rem;
-  display: none;
-}
-
-#featured .featured-projects .featured-project .project-caption {
-  position: absolute;
-  bottom: 3.3rem;
-  left: 2.4rem;
-}
-
-#featured .featured-projects .featured-project .project-caption p {
-  opacity: 0.75;
-}
-
-#featured .featured-projects .featured-project.featured-project-1 {
+#featured .featured-projects .card.featured-project-1 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/home/mobile/image-del-sol.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/home/mobile/image-del-sol.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#featured .featured-projects .featured-project.featured-project-2 {
+#featured .featured-projects .card.featured-project-2 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/home/mobile/image-228b.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/home/mobile/image-228b.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#featured .featured-projects .featured-project.featured-project-3 {
+#featured .featured-projects .card.featured-project-3 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/home/mobile/image-prototype.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/home/mobile/image-prototype.jpg");
   background-repeat: no-repeat;
@@ -910,26 +927,19 @@ body {
   #featured .featured-title .featured-btn-top {
     display: inline;
   }
-  #featured .featured-projects .featured-project .h1-lg {
-    display: block;
-  }
-  #featured .featured-projects .featured-project .project-caption {
-    bottom: 4.9rem;
-    left: 4rem;
-  }
-  #featured .featured-projects .featured-project.featured-project-1 {
+  #featured .featured-projects .card.featured-project-1 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/home/tablet/image-del-sol.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/home/tablet/image-del-sol.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
-  #featured .featured-projects .featured-project.featured-project-2 {
+  #featured .featured-projects .card.featured-project-2 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/home/tablet/image-228b.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/home/tablet/image-228b.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
-  #featured .featured-projects .featured-project.featured-project-3 {
+  #featured .featured-projects .card.featured-project-3 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/home/tablet/image-prototype.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/home/tablet/image-prototype.jpg");
     background-repeat: no-repeat;
@@ -951,19 +961,15 @@ body {
         grid-template-rows: 56rem;
     gap: 3rem;
   }
-  #featured .featured-projects .featured-project .h1-lg {
-    top: 2.7rem;
-    right: -1.5rem;
-  }
-  #featured .featured-projects .featured-project.featured-project-1 {
+  #featured .featured-projects .card.featured-project-1 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/home/desktop/image-del-sol.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/home/desktop/image-del-sol.jpg");
   }
-  #featured .featured-projects .featured-project.featured-project-2 {
+  #featured .featured-projects .card.featured-project-2 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/home/desktop/image-228b.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/home/desktop/image-228b.jpg");
   }
-  #featured .featured-projects .featured-project.featured-project-3 {
+  #featured .featured-projects .card.featured-project-3 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/home/desktop/image-prototype.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/home/desktop/image-prototype.jpg");
   }

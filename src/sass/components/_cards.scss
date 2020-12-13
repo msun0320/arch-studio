@@ -1,0 +1,44 @@
+.card {
+  position: relative;
+
+  .h1-lg {
+    opacity: 0.5;
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 20rem;
+    display: none;
+  }
+
+  .project-caption {
+    position: absolute;
+    bottom: 3.3rem;
+    left: 2.4rem;
+
+    p {
+      opacity: 0.75;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .card {
+    .h1-lg {
+      display: block;
+    }
+
+    .project-caption {
+      bottom: 4.9rem;
+      left: 4rem;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  .card {
+    .h1-lg {
+      top: 2.7rem;
+      right: -1.5rem;
+    }
+  }
+}
