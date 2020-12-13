@@ -1,11 +1,38 @@
 @import '../utilities/variables';
 
 header {
+  position: relative;
+
+  .header-label {
+    display: none;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+    position: absolute;
+    left: 6.5rem;
+
+    span {
+      letter-spacing: 1em;
+      color: $light-grey;
+
+      &::before {
+        content: '';
+        width: 10.4rem;
+        border-bottom: 1px solid $light-grey;
+        display: inline-block;
+        margin: 0 4.8rem 0.3rem 0;
+      }
+    }
+  }
+
   nav {
     padding: 3.2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .logo {
+      width: 7.7rem;
+    }
 
     .menu-togglers {
       .icon-close {
@@ -44,6 +71,10 @@ header {
 
 @media (min-width: $breakpoint-tablet) {
   header {
+    .header-label {
+      display: block;
+    }
+
     nav {
       padding: 5.6rem 0;
       justify-content: flex-start;
@@ -51,6 +82,7 @@ header {
 
       .logo {
         margin-right: 7.9rem;
+        width: auto;
       }
 
       .menu-togglers {
@@ -62,6 +94,7 @@ header {
         position: static;
         padding: 0;
         background: none;
+        margin-top: 0.5rem;
 
         ul {
           li {
@@ -84,6 +117,10 @@ header {
 
 @media (min-width: $breakpoint-laptop) {
   header {
+    .header-label {
+      left: 10rem;
+    }
+
     nav {
       padding: 5.6rem 0;
       justify-content: flex-start;

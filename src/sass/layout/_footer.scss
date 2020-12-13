@@ -1,0 +1,104 @@
+@import '../utilities/variables';
+
+footer {
+  background: $very-light-grey;
+
+  nav {
+    padding: 9.1rem 0 16.1rem 0;
+    position: relative;
+
+    .logo {
+      width: 5.8rem;
+      padding: 4.8rem 3.2rem;
+      background: $very-dark-blue;
+      position: absolute;
+      top: -6rem;
+      left: calc((100% - 12rem) / 2);
+    }
+
+    .navlinks {
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          margin-bottom: 4rem;
+
+          &:last-of-type {
+            margin: 0;
+          }
+
+          a {
+            font-weight: $weight-bold;
+            color: $medium-grey;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .btn-text {
+      position: absolute;
+      bottom: 4.8rem;
+      left: calc((100% - 25.5rem) / 2);
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  footer {
+    width: calc(100% - 12rem - 12.6rem);
+    height: 12rem;
+    margin-left: 12rem;
+
+    nav {
+      padding: 4.7rem 0 0 4rem;
+
+      .logo {
+        top: 0;
+        left: -12rem;
+      }
+
+      .navlinks {
+        ul {
+          flex-direction: row;
+
+          li {
+            margin: 0;
+            margin-right: 5.7rem;
+          }
+        }
+      }
+
+      .btn-text {
+        top: 2.4rem;
+        right: -12.6rem;
+        bottom: auto;
+        left: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  footer {
+    width: calc(100% - 2 * 16.5rem - 20rem - 12.6rem);
+    height: 20rem;
+    margin-left: calc(20rem + 165 / 1440 * 100%);
+
+    nav {
+      padding: 8.6rem 0 0 8.5rem;
+
+      .logo {
+        width: 9.6rem;
+        padding: 8rem 5.2rem;
+        left: -20rem;
+      }
+
+      .btn-text {
+        top: 6.4rem;
+      }
+    }
+  }
+}

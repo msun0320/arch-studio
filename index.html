@@ -16,6 +16,8 @@
   </head>
   <body>
     <header>
+      <div class="header-label">HOME</div>
+
       <div class="container">
         <nav>
           <img class="logo" src="src/assets/logo.svg" alt="Arch Studio logo" />
@@ -139,8 +141,8 @@
       <section id="welcome">
         <div class="container">
           <h1 class="h1-lg">Welcome</h1>
-          <div>
-            <h2>Welcome to Arch Studio</h2>
+          <div class="welcome-content">
+            <h2>Welcome to <br />Arch Studio</h2>
             <p>
               We have a unique network and skillset to help bring your projects
               to life. Our small team of highly skilled individuals combined
@@ -159,20 +161,22 @@
               the test of time.
             </p>
           </div>
-
           <img src="src/assets/home/desktop/image-welcome.jpg" alt="Welcome" />
         </div>
       </section>
 
       <section id="small-team">
-        <h2>Small team, big ideas</h2>
-        <a class="btn-text text-white" href="src/about.html">
-          <span>About Us</span>
-          <img
-            src="src/assets/icons/icon-arrow.svg"
-            alt="Go to about us page"
-          />
-        </a>
+        <div class="small-team-content">
+          <h2 class="text-white">Small team, <br/ >big ideas</h2>
+          <a class="btn-text text-white" href="src/about.html">
+            <span>About Us</span>
+            <img
+              src="src/assets/icons/icon-arrow.svg"
+              alt="Go to about us page"
+            />
+          </a>
+        </div>
+        <div class="small-team-bg"></div>
       </section>
 
       <section id="featured">
@@ -191,20 +195,29 @@
             </a>
           </div>
 
-          <div class="featured-projects">
-            <div>
-              <h3>Porject Del Sol</h3>
-              <p>View All Projects</p>
+          <div class="featured-projects grid">
+            <div class="featured-project featured-project-1">
+              <h1 class="h1-lg text-white">1</h1>
+              <div class="project-caption">
+                <h3 class="text-white">Porject Del Sol</h3>
+                <p class="text-white">View All Projects</p>
+              </div>
             </div>
 
-            <div>
-              <h3>P228B Tower</h3>
-              <p>View All Projects</p>
+            <div class="featured-project featured-project-2">
+              <h1 class="h1-lg text-white">2</h1>
+              <div class="project-caption">
+                <h3 class="text-white">P228B Tower</h3>
+                <p class="text-white">View All Projects</p>
+              </div>
             </div>
 
-            <div>
-              <h3>Le Prototype</h3>
-              <p>View All Projects</p>
+            <div class="featured-project featured-project-3">
+              <h1 class="h1-lg text-white">3</h1>
+              <div class="project-caption">
+                <h3 class="text-white">Le Prototype</h3>
+                <p class="text-white">View All Projects</p>
+              </div>
             </div>
           </div>
 
@@ -223,18 +236,27 @@
     </main>
 
     <footer>
-      <img src="src/assets/logo-white.svg" alt="Arch Studio logo" />
       <nav>
-        <ul>
-          <li><a href="src/portfolio.html">Portfolio</a></li>
-          <li><a href="src/about.html">About Us</a></li>
-          <li><a href="src/contact.html">Contact</a></li>
-        </ul>
+        <img
+          class="logo"
+          src="src/assets/logo-white.svg"
+          alt="Arch Studio logo"
+        />
+        <div class="navlinks">
+          <ul>
+            <li><a href="src/portfolio.html">Portfolio</a></li>
+            <li><a href="src/about.html">About Us</a></li>
+            <li><a href="src/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn-text text-white" href="src/portfolio.html">
+          <span>See Our Portfolio</span>
+          <img
+            src="src/assets/icons/icon-arrow.svg"
+            alt="Go to portfolio page"
+          />
+        </a>
       </nav>
-      <a class="btn-text text-white" href="src/portfolio.html">
-        <span>See Our Portfolio</span>
-        <img src="src/assets/icons/icon-arrow.svg" alt="Go to portfolio page" />
-      </a>
     </footer>
 
     <script src="src/js/script.js"></script>

@@ -9,7 +9,7 @@ body {
   font-size: 1.5rem;
   font-weight: $weight-medium;
   line-height: 2.5rem;
-  color: $very-dark-blue;
+  color: $dark-grey;
 }
 
 .h1-lg {
@@ -17,10 +17,11 @@ body {
   font-size: 12rem;
   font-weight: $weight-bold;
   line-height: 20rem;
-  letter-spacing: -0.025;
+  letter-spacing: -0.025em;
+  color: $very-light-grey;
 }
 
-@media (min-width: $breakpoint-tablet) {
+@media (min-width: $breakpoint-laptop) {
   .h1-lg {
     font-size: 20rem;
   }
@@ -31,7 +32,8 @@ body {
   font-size: 4.8rem;
   font-weight: $weight-bold;
   line-height: 4.8rem;
-  letter-spacing: -0.025;
+  letter-spacing: -0.025em;
+  color: $very-dark-blue;
 }
 
 @media (min-width: $breakpoint-tablet) {
@@ -46,7 +48,8 @@ h2 {
   font-size: 4rem;
   font-weight: $weight-bold;
   line-height: 4.8rem;
-  letter-spacing: -0.0357;
+  letter-spacing: -0.0357em;
+  color: $very-dark-blue;
 }
 
 @media (min-width: $breakpoint-tablet) {
@@ -60,6 +63,7 @@ h3 {
   font-family: $font-family;
   font-size: 1.8rem;
   font-weight: $weight-bold;
+  color: $very-dark-blue;
 }
 
 .text-white {
