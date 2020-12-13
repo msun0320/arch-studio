@@ -197,11 +197,9 @@ body {
   }
 
   .featured-projects {
-    &.grid {
-      display: grid;
-      grid-template-rows: repeat(3, 24rem);
-      gap: 2.4rem;
-    }
+    display: grid;
+    grid-template-rows: repeat(3, 24rem);
+    gap: 2.4rem;
 
     .featured-project-1 {
       background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
@@ -283,11 +281,9 @@ body {
     }
 
     .featured-projects {
-      &.grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 56rem;
-        gap: 3rem;
-      }
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 56rem;
+      gap: 3rem;
 
       .featured-project-1 {
         background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),

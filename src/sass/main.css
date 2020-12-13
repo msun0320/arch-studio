@@ -869,7 +869,7 @@ body {
   display: none;
 }
 
-#featured .featured-projects.grid {
+#featured .featured-projects {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (24rem)[3];
@@ -954,7 +954,7 @@ body {
   #featured .featured-title {
     margin-bottom: 6.4rem;
   }
-  #featured .featured-projects.grid {
+  #featured .featured-projects {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: 56rem;
@@ -973,5 +973,26 @@ body {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/home/desktop/image-prototype.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/home/desktop/image-prototype.jpg");
   }
+}
+
+#gallery .featured-project-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/portfolio/mobile/image-seraph.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-seraph.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#gallery .featured-project-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/portfolio/mobile/image-seraph.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-seraph.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#gallery .featured-project-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/portfolio/mobile/image-seraph.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-seraph.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */
