@@ -967,14 +967,20 @@ body {
   #featured .featured-projects .featured-project-1 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/home/desktop/image-del-sol.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/home/desktop/image-del-sol.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   #featured .featured-projects .featured-project-2 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/home/desktop/image-228b.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/home/desktop/image-228b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   #featured .featured-projects .featured-project-3 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../assets/home/desktop/image-prototype.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/home/desktop/image-prototype.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

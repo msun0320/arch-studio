@@ -201,25 +201,13 @@ body {
     grid-template-columns: 1fr;
     gap: 2.4rem;
 
-    .featured-project-1 {
-      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-        url('../assets/home/mobile/image-del-sol.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .featured-project-2 {
-      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-        url('../assets/home/mobile/image-228b.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .featured-project-3 {
-      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-        url('../assets/home/mobile/image-prototype.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
+    @each $featured-project in $featured-projects {
+      .featured-project-#{index($featured-projects, $featured-project)} {
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+          url('../assets/home/mobile/image-#{$featured-project}.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     }
   }
 
@@ -246,25 +234,13 @@ body {
     }
 
     .featured-projects {
-      .featured-project-1 {
-        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-          url('../assets/home/tablet/image-del-sol.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .featured-project-2 {
-        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-          url('../assets/home/tablet/image-228b.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .featured-project-3 {
-        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-          url('../assets/home/tablet/image-prototype.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+      @each $featured-project in $featured-projects {
+        .featured-project-#{index($featured-projects, $featured-project)} {
+          background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+            url('../assets/home/tablet/image-#{$featured-project}.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
       }
     }
 
@@ -284,19 +260,13 @@ body {
       grid-template-columns: repeat(3, 1fr);
       gap: 3.2rem 3rem;
 
-      .featured-project-1 {
-        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-          url('../assets/home/desktop/image-del-sol.jpg');
-      }
-
-      .featured-project-2 {
-        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-          url('../assets/home/desktop/image-228b.jpg');
-      }
-
-      .featured-project-3 {
-        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-          url('../assets/home/desktop/image-prototype.jpg');
+      @each $featured-project in $featured-projects {
+        .featured-project-#{index($featured-projects, $featured-project)} {
+          background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+            url('../assets/home/desktop/image-#{$featured-project}.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
       }
     }
   }
