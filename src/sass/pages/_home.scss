@@ -198,7 +198,7 @@ body {
 
   .featured-projects {
     display: grid;
-    grid-template-rows: repeat(3, 24rem);
+    grid-template-columns: 1fr;
     gap: 2.4rem;
 
     .featured-project-1 {
@@ -282,8 +282,7 @@ body {
 
     .featured-projects {
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 56rem;
-      gap: 3rem;
+      gap: 3.2rem 3rem;
 
       .featured-project-1 {
         background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),

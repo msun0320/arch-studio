@@ -1,5 +1,6 @@
 .card {
   position: relative;
+  height: 24rem;
 
   .h1-lg {
     opacity: 0.5;
@@ -36,6 +37,8 @@
 
 @media (min-width: $breakpoint-laptop) {
   .card {
+    height: 56rem;
+
     .h1-lg {
       top: 2.7rem;
       right: -1.5rem;
