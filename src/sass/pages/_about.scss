@@ -1,0 +1,103 @@
+@import '../layout/hero';
+
+#heritage {
+  padding: 8rem 0;
+
+  .heritage-content {
+    &::before {
+      content: '';
+      width: 6.5rem;
+      border-bottom: 1px solid $light-grey;
+      display: inline-block;
+    }
+
+    h2 {
+      margin: 6.7rem 0 3.3rem;
+    }
+  }
+
+  img {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  #heritage {
+    padding: 20.8rem 0 18.3rem 0;
+
+    .heritage-content {
+      h2 {
+        margin: 7.4rem 0 3.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  #heritage {
+    padding-bottom: 20rem;
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .heritage-content {
+        margin-right: 12.4rem;
+
+        h2 {
+          margin: 9.9rem 0 3.2rem;
+        }
+      }
+
+      img {
+        display: inline;
+        width: 100%;
+        align-self: center;
+      }
+    }
+  }
+}
+
+#leaders {
+  padding-bottom: 13.2rem;
+
+  .container {
+    display: grid;
+    gap: 6.8rem;
+
+    .profile-cards {
+      display: grid;
+      gap: 4rem;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  #leaders {
+    padding-bottom: 20rem;
+
+    .container {
+      gap: 5.7rem;
+
+      .profile-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6.4rem 1.1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  #leaders {
+    padding-bottom: 16.8rem;
+
+    .container {
+      grid-template-columns: 1fr 2fr;
+      gap: 0;
+
+      .profile-cards {
+        gap: 7.2rem 3rem;
+      }
+    }
+  }
+}

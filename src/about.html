@@ -12,6 +12,264 @@
     />
 
     <title>Frontend Mentor | Arch Studio Website Challenge</title>
+    <link rel="stylesheet" href="sass/main.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header-label"><span>ABOUT US</span></div>
+
+      <div class="container">
+        <nav>
+          <img class="logo" src="assets/logo.svg" alt="Arch Studio logo" />
+          <div class="menu-togglers">
+            <img
+              class="icon-hamburger"
+              src="assets/icons/icon-hamburger.svg"
+              alt="Open menu"
+            />
+            <img
+              class="icon-close"
+              src="assets/icons/icon-close.svg"
+              alt="Close menu"
+            />
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="overlay-image">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="assets/about/desktop/image-hero.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="assets/about/tablet/image-hero.jpg"
+            />
+            <img src="assets/about/mobile/image-hero.jpg" alt="hero image" />
+          </picture>
+          <div class="overlay"></div>
+          <div class="blank-rectangle"></div>
+        </div>
+        <h1 class="h1-lg">About</h1>
+        <div class="hero-content">
+          <h2>Your team of professionals</h2>
+          <p>
+            Our small team of world-class professionals will work with you every
+            step of the way. Strong relationships are at the core of everything
+            we do. This extends to the relationship our projects have with their
+            surroundings.
+          </p>
+        </div>
+      </section>
+
+      <section id="heritage">
+        <div class="container">
+          <div class="heritage-content">
+            <h2>Our <br />Heritage</h2>
+            <p>
+              Founded in 2007, we started as a trio of architects. Our
+              complimentary skills and relentless attention to detail turned
+              Arch into one of the most sought after boutique firms in the
+              country.
+            </p>
+            <p>
+              Speciliazing in Urban Design allowed us to focus on creating
+              exceptional structures that live in harmony with their
+              surroundings. We consider every detail from every surrounding
+              element to inform our designs.
+            </p>
+            <p>
+              Our small team of world-class professionals provides input on
+              every project.
+            </p>
+          </div>
+          <img
+            src="assets/about/desktop/image-heritage.jpg"
+            alt="heritage image"
+          />
+        </div>
+      </section>
+
+      <section id="leaders">
+        <div class="container">
+          <h2>The <br />Leaders</h2>
+          <div class="profile-cards">
+            <div class="profile-card">
+              <img
+                class="profile-picture"
+                src="assets/about/desktop/avatar-jake.jpg"
+                alt="Jake"
+              />
+              <h3>Jake Richards</h3>
+              <p>Chief Architect</p>
+              <div class="social-icons">
+                <a href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="assets/icons/icon-linkedin-white.svg"
+                    />
+                    <img
+                      src="assets/icons/icon-linkedin.svg"
+                      alt="Link to Jake's Linkedin"
+                    />
+                  </picture>
+                </a>
+                <a href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="assets/icons/icon-twitter-white.svg"
+                    />
+                    <img
+                      src="assets/icons/icon-twitter.svg"
+                      alt="Link to Jake's Twitter"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+
+            <div class="profile-card">
+              <img
+                class="profile-picture"
+                src="assets/about/desktop/avatar-thompson.jpg"
+                alt="Thompson"
+              />
+              <h3>Thompson Smith</h3>
+              <p>Head of Finance</p>
+              <div class="social-icons">
+                <a href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="assets/icons/icon-linkedin-white.svg"
+                    />
+                    <img
+                      src="assets/icons/icon-linkedin.svg"
+                      alt="Link to Thompson's Linkedin"
+                    />
+                  </picture>
+                </a>
+                <a href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="assets/icons/icon-twitter-white.svg"
+                    />
+                    <img
+                      src="assets/icons/icon-twitter.svg"
+                      alt="Link to Thompson's Twitter"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+
+            <div class="profile-card">
+              <img
+                class="profile-picture"
+                src="assets/about/desktop/avatar-jackson.jpg"
+                alt="Jackson"
+              />
+              <h3>Jackson Rourke</h3>
+              <p>Lead Designer</p>
+              <div class="social-icons">
+                <a href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="assets/icons/icon-linkedin-white.svg"
+                    />
+                  </picture>
+                  <img
+                    src="assets/icons/icon-linkedin.svg"
+                    alt="Link to Jackson's Linkedin"
+                  />
+                </a>
+                <a href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="assets/icons/icon-twitter-white.svg"
+                    />
+                  </picture>
+                  <img
+                    src="assets/icons/icon-twitter.svg"
+                    alt="Link to Jackson's Twitter"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="profile-card">
+              <img
+                class="profile-picture"
+                src="assets/about/desktop/avatar-maria.jpg"
+                alt="Maria"
+              />
+              <h3>Maria Simpson</h3>
+              <p>Senior Architect</p>
+              <div class="social-icons">
+                <a href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="assets/icons/icon-linkedin-white.svg"
+                    />
+                  </picture>
+                  <img
+                    src="assets/icons/icon-linkedin.svg"
+                    alt="Link to Maria's Linkedin"
+                  />
+                </a>
+                <a href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="assets/icons/icon-twitter-white.svg"
+                    />
+                  </picture>
+                  <img
+                    src="assets/icons/icon-twitter.svg"
+                    alt="Link to Maria's Twitter"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <img class="logo" src="assets/logo-white.svg" alt="Arch Studio logo" />
+        <div class="navlinks">
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn-text text-white" href="portfolio.html">
+          <span>See Our Portfolio</span>
+          <img src="assets/icons/icon-arrow.svg" alt="Go to portfolio page" />
+        </a>
+      </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

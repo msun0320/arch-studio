@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 html,
 body,
 div,
@@ -704,6 +705,65 @@ footer nav .btn-text {
   }
 }
 
+.profile-card .profile-picture {
+  width: 100%;
+}
+
+.profile-card h3 {
+  margin: 2.4rem 0 0.9rem;
+}
+
+.profile-card p {
+  margin-bottom: 1.6rem;
+}
+
+.profile-card .social-icons a {
+  margin-right: 2.6rem;
+  text-decoration: none;
+}
+
+.profile-card .social-icons a img {
+  width: 3.2rem;
+}
+
+@media (min-width: 1024px) {
+  .profile-card {
+    position: relative;
+  }
+  .profile-card p {
+    margin: 0;
+  }
+  .profile-card .social-icons {
+    width: 100%;
+    height: calc(100vw * (324 / 1440));
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0;
+  }
+  .profile-card .social-icons:hover {
+    opacity: 1;
+  }
+  .profile-card .social-icons a {
+    margin-right: 3.2rem;
+  }
+  .profile-card .social-icons a:nth-of-type(2) {
+    margin-right: 0;
+  }
+  .profile-card .social-icons a img {
+    width: 4rem;
+  }
+}
+
 body {
   max-width: 1440px;
   margin: auto;
@@ -1238,6 +1298,192 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/desktop/image-paramour.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+#hero .overlay-image {
+  position: relative;
+}
+
+#hero .overlay-image img {
+  width: 100%;
+}
+
+#hero .overlay-image .overlay {
+  width: 100%;
+  height: calc(100vw * 240 / 375);
+  background: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  top: 0;
+}
+
+#hero .overlay-image .blank-rectangle {
+  width: 91.46667%;
+  height: 4.5rem;
+  position: absolute;
+  left: 0;
+  bottom: 0.8rem;
+  background: white;
+}
+
+#hero .h1-lg {
+  display: none;
+}
+
+#hero .hero-content {
+  padding: 3.5rem 3.2rem 0;
+}
+
+#hero .hero-content h2 {
+  margin-bottom: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  #hero {
+    position: relative;
+  }
+  #hero .overlay-image .overlay {
+    height: calc(100vw * (572 / 768) * 720 / 573);
+  }
+  #hero .overlay-image .blank-rectangle {
+    display: none;
+  }
+  #hero .h1-lg {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 39rem;
+    z-index: 999;
+  }
+  #hero .hero-content {
+    width: 45.6rem;
+    padding: 8.8rem 0 0 5.9rem;
+    position: absolute;
+    right: 0;
+    bottom: 0.8rem;
+    background: white;
+  }
+  #hero .hero-content::before {
+    content: '';
+    width: 6.5rem;
+    border-bottom: 1px solid #c8ccd8;
+    display: inline-block;
+  }
+  #hero .hero-content h2 {
+    margin: 7.4rem 0 3.5rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero .overlay-image img {
+    width: auto;
+  }
+  #hero .overlay-image .overlay {
+    width: 63.5rem;
+    height: 72rem;
+  }
+  #hero .h1-lg {
+    bottom: 42.5rem;
+  }
+  #hero .hero-content {
+    padding: 16rem 0 0 18.2rem;
+  }
+}
+
+#heritage {
+  padding: 8rem 0;
+}
+
+#heritage .heritage-content::before {
+  content: '';
+  width: 6.5rem;
+  border-bottom: 1px solid #c8ccd8;
+  display: inline-block;
+}
+
+#heritage .heritage-content h2 {
+  margin: 6.7rem 0 3.3rem;
+}
+
+#heritage img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #heritage {
+    padding: 20.8rem 0 18.3rem 0;
+  }
+  #heritage .heritage-content h2 {
+    margin: 7.4rem 0 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #heritage {
+    padding-bottom: 20rem;
+  }
+  #heritage .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  #heritage .container .heritage-content {
+    margin-right: 12.4rem;
+  }
+  #heritage .container .heritage-content h2 {
+    margin: 9.9rem 0 3.2rem;
+  }
+  #heritage .container img {
+    display: inline;
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+#leaders {
+  padding-bottom: 13.2rem;
+}
+
+#leaders .container {
+  display: -ms-grid;
+  display: grid;
+  gap: 6.8rem;
+}
+
+#leaders .container .profile-cards {
+  display: -ms-grid;
+  display: grid;
+  gap: 4rem;
+}
+
+@media (min-width: 768px) {
+  #leaders {
+    padding-bottom: 20rem;
+  }
+  #leaders .container {
+    gap: 5.7rem;
+  }
+  #leaders .container .profile-cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 6.4rem 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #leaders {
+    padding-bottom: 16.8rem;
+  }
+  #leaders .container {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    gap: 0;
+  }
+  #leaders .container .profile-cards {
+    gap: 7.2rem 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
