@@ -12,6 +12,172 @@
     />
 
     <title>Frontend Mentor | Arch Studio Website Challenge</title>
+    <link rel="stylesheet" href="sass/main.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header-label"><span>CONTACT</span></div>
+
+      <div class="container">
+        <nav>
+          <img class="logo" src="assets/logo.svg" alt="Arch Studio logo" />
+          <div class="menu-togglers">
+            <img
+              class="icon-hamburger"
+              src="assets/icons/icon-hamburger.svg"
+              alt="Open menu"
+            />
+            <img
+              class="icon-close"
+              src="assets/icons/icon-close.svg"
+              alt="Close menu"
+            />
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="overlay-image">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="assets/contact/desktop/image-hero.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="assets/contact/tablet/image-hero.jpg"
+            />
+            <img src="assets/contact/mobile/image-hero.jpg" alt="hero image" />
+          </picture>
+          <div class="overlay"></div>
+          <div class="blank-rectangle"></div>
+        </div>
+        <h1 class="h1-lg">Contact</h1>
+        <div class="hero-content">
+          <h2>Tell us about your project</h2>
+          <p>
+            We’d love to hear more about your project. Please, leave a message
+            below or give us a call. We have two offices, one in Texas and one
+            in Tennessee. If you find yourself nearby, come say hello!
+          </p>
+        </div>
+      </section>
+
+      <section id="details">
+        <div class="container">
+          <h2>Contact Details</h2>
+          <div class="details-content">
+            <div class="main-office">
+              <h3>Main Office</h3>
+              <div class="contact-info">
+                <address>
+                  <h4>Mail :</h4>
+                  <p>archone@mail.com</p>
+                  <h4>Address :</h4>
+                  <p>1892 Chenoweth Drive TN</p>
+                  <h4>Phone :</h4>
+                  <p>123-456-3451</p>
+                </address>
+                <a class="btn-text" href="#">
+                  <span>View on Map</span>
+                  <img
+                    src="assets/icons/icon-arrow-black.svg"
+                    alt="Go to map"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="office-2">
+              <h3>Office II</h3>
+              <div class="contact-info">
+                <address>
+                  <h4>Mail :</h4>
+                  <p>archone@mail.com</p>
+                  <h4>Address :</h4>
+                  <p>3399 Wines Lane TX</p>
+                  <h4>Phone :</h4>
+                  <p>832-123-4321</p>
+                </address>
+                <a class="btn-text" href="#">
+                  <span>View on Map</span>
+                  <img
+                    src="assets/icons/icon-arrow-black.svg"
+                    alt="Go to map"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets/contact/desktop/image-map.png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="assets/contact/tablet/image-map.png"
+          />
+          <img
+            class="map"
+            src="assets/contact/mobile/image-map.png"
+            alt="map"
+          />
+        </picture>
+      </section>
+
+      <section id="connect">
+        <div class="container">
+          <h2>Connect with us</h2>
+          <form>
+            <input type="text" name="name" placeholder="Name" />
+            <span class="error-message" aria-live="polite"></span>
+            <input type="email" name="email" placeholder="Email" />
+            <span class="error-message" aria-live="polite"></span>
+            <textarea name="message" placeholder="Message"></textarea>
+            <span
+              class="error-message error-message-textarea"
+              aria-live="polite"
+            ></span>
+            <button class="btn-arrow" type="submit">
+              <img
+                src="assets/icons/icon-arrow.svg"
+                alt="Click to submit form"
+              />
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <img class="logo" src="assets/logo-white.svg" alt="Arch Studio logo" />
+        <div class="navlinks">
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn-text text-white" href="portfolio.html">
+          <span>See Our Portfolio</span>
+          <img src="assets/icons/icon-arrow.svg" alt="Go to portfolio page" />
+        </a>
+      </nav>
+    </footer>
+
+    <!-- <script src="js/script.js"></script> -->
+  </body>
 </html>
