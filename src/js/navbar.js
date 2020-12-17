@@ -3,11 +3,12 @@ const closeIcon = document.querySelector('.icon-close');
 const menu = document.querySelector('.nav-links');
 
 const toggleMenu = () => {
-  const isShown = menu.style.display === 'block';
+  const isOpen = menu.style.display === 'block';
 
-  menu.style.display = isShown ? 'none' : 'block';
-  hamburgerIcon.style.display = isShown ? 'inline' : 'none';
-  closeIcon.style.display = isShown ? 'none' : 'inline';
+  menu.style.display = isOpen ? 'none' : 'block';
+  hamburgerIcon.style.display = isOpen ? 'inline' : 'none';
+  closeIcon.style.display = isOpen ? 'none' : 'inline';
+  document.body.style.position = isOpen ? 'static' : 'fixed';
 };
 
 hamburgerIcon.addEventListener('click', toggleMenu);
@@ -20,4 +21,5 @@ window.addEventListener('resize', () => {
   menu.style.display = isLargeScreen ? 'block' : 'none';
   hamburgerIcon.style.display = isLargeScreen ? 'none' : 'inline';
   closeIcon.style.display = isLargeScreen ? 'inline' : 'none';
+  document.body.style.position = isLargeScreen ? 'static' : 'fixed';
 });
