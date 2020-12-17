@@ -381,10 +381,11 @@ header nav .nav-links ul li a {
 }
 
 .slider .slider-indicators ol li .btn-num {
-  border-right: 1px solid #c8ccd8;
+  border-left: 1px solid #c8ccd8;
+  border-bottom: 1px solid #c8ccd8;
 }
 
-.slider .slider-indicators ol li:last-of-type .btn-num {
+.slider .slider-indicators ol li:first-of-type .btn-num {
   border: 0;
 }
 

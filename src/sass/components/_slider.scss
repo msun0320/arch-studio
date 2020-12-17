@@ -15,10 +15,11 @@
 
       li {
         .btn-num {
-          border-right: 1px solid $light-grey;
+          border-left: 1px solid $light-grey;
+          border-bottom: 1px solid $light-grey;
         }
 
-        &:last-of-type {
+        &:first-of-type {
           .btn-num {
             border: 0;
           }
