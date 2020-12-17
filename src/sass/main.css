@@ -248,6 +248,7 @@ header nav {
 
 header nav .logo-link .logo {
   width: 7.7rem;
+  vertical-align: bottom;
 }
 
 header nav .menu-togglers {
@@ -315,6 +316,7 @@ header nav .nav-links ul li a {
   }
   header nav .nav-links ul li {
     margin-right: 4.8rem;
+    margin-bottom: 0;
     display: inline-block;
   }
   header nav .nav-links ul li:nth-of-type(3) {
@@ -759,6 +761,8 @@ footer nav .btn-text {
         -ms-flex-align: center;
             align-items: center;
     opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
   }
   .profile-card .social-icons:hover {
     opacity: 1;
