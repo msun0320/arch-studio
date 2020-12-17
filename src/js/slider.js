@@ -1,3 +1,5 @@
+'use strict';
+
 const innerSlider = document.querySelector('.slider-inner');
 const sliderItems = document.querySelectorAll('.slider-item');
 const sliderIndicators = document.querySelectorAll('.btn-num');

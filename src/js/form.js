@@ -1,3 +1,5 @@
+'use strict';
+
 const form = document.querySelector('form');
 const inputs = document.querySelectorAll('input');
 const textarea = document.querySelector('textarea');

@@ -1,5 +1,7 @@
 const hamburgerIcon = document.querySelector('.icon-hamburger');
 const closeIcon = document.querySelector('.icon-close');
+"use strict";
+
 const menu = document.querySelector('.nav-links');
 
 const toggleMenu = () => {
