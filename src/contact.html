@@ -13,6 +13,17 @@
 
     <title>Frontend Mentor | Arch Studio Website Challenge</title>
     <link rel="stylesheet" href="sass/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
   </head>
   <body>
     <header>
@@ -122,21 +133,7 @@
           </div>
         </div>
 
-        <picture>
-          <source
-            media="(min-width: 1024px)"
-            srcset="assets/contact/desktop/image-map.png"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="assets/contact/tablet/image-map.png"
-          />
-          <img
-            class="map"
-            src="assets/contact/mobile/image-map.png"
-            alt="map"
-          />
-        </picture>
+        <div id="map"></div>
       </section>
 
       <section id="connect">
@@ -182,5 +179,6 @@
 
     <script src="js/navbar.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

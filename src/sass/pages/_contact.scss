@@ -50,8 +50,8 @@
     }
   }
 
-  .map {
-    width: 100%;
+  #map {
+    height: 36.7rem;
   }
 }
 
@@ -83,10 +83,10 @@
       }
     }
 
-    .map {
+    #map {
       width: 572 / 768 * 100%;
       margin: auto;
-      display: block;
+      height: 56rem;
     }
   }
 }
@@ -111,7 +111,7 @@
         }
       }
 
-      .map {
+      #map {
         width: 1110 / 1440 * 100%;
       }
     }
@@ -142,7 +142,6 @@
     padding: 16rem 0 24rem;
 
     .container {
-      //   gap: 6.2rem;
       grid-template-columns: 1fr 2fr;
     }
   }

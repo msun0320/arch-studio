@@ -1683,8 +1683,8 @@ form .btn-arrow {
   color: #1b1d23;
 }
 
-#details .map {
-  width: 100%;
+#details #map {
+  height: 36.7rem;
 }
 
 @media (min-width: 768px) {
@@ -1712,10 +1712,10 @@ form .btn-arrow {
     -ms-grid-column-align: end;
         justify-self: end;
   }
-  #details .map {
+  #details #map {
     width: 74.47917%;
     margin: auto;
-    display: block;
+    height: 56rem;
   }
 }
 
@@ -1739,7 +1739,7 @@ form .btn-arrow {
     -ms-grid-column-align: start;
         justify-self: start;
   }
-  #details .container .map {
+  #details .container #map {
     width: 77.08333%;
   }
 }
