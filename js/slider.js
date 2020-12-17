@@ -18,22 +18,18 @@ const moveSliderTo = (slide, button) => {
 
 setInterval(() => {
   moveSliderFrom(sliderItems[currentIndex], sliderIndicators[currentIndex]);
-
   if (currentIndex === 3) {
     currentIndex = 0;
   } else {
     currentIndex++;
   }
-
   moveSliderTo(sliderItems[currentIndex], sliderIndicators[currentIndex]);
 }, 5000);
 
 sliderIndicators.forEach(indicator => {
   indicator.addEventListener('click', () => {
     moveSliderFrom(sliderItems[currentIndex], sliderIndicators[currentIndex]);
-
     currentIndex = parseInt(indicator.innerHTML) - 1;
-
     moveSliderTo(sliderItems[currentIndex], sliderIndicators[currentIndex]);
   });
 });

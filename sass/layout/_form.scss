@@ -38,6 +38,8 @@ form {
 
     &.error {
       border-bottom-color: $red;
+      color: $red;
+      opacity: 0.5;
 
       &::placeholder {
         color: $red;

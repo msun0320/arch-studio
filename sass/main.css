@@ -1576,6 +1576,8 @@ form textarea::placeholder {
 form input.error,
 form textarea.error {
   border-bottom-color: #df5656;
+  color: #df5656;
+  opacity: 0.5;
 }
 
 form input.error::-webkit-input-placeholder,
