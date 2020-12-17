@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #gallery {
   padding: 5.6rem 0 13.2rem 0;
 
@@ -12,6 +16,12 @@
           url('../assets/portfolio/mobile/image-#{$project}.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        opacity: 1;
+        transition: opacity 0.3s;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
   }

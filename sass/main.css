@@ -1058,6 +1058,10 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #gallery {
   padding: 5.6rem 0 13.2rem 0;
 }
@@ -1075,6 +1079,13 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-seraph.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#gallery .container .featured-project-1:hover {
+  opacity: 0.5;
 }
 
 #gallery .container .featured-project-2 {
@@ -1082,6 +1093,13 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-eebox.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#gallery .container .featured-project-2:hover {
+  opacity: 0.5;
 }
 
 #gallery .container .featured-project-3 {
@@ -1089,6 +1107,13 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-federal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#gallery .container .featured-project-3:hover {
+  opacity: 0.5;
 }
 
 #gallery .container .featured-project-4 {
@@ -1096,6 +1121,13 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-del-sol.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#gallery .container .featured-project-4:hover {
+  opacity: 0.5;
 }
 
 #gallery .container .featured-project-5 {
@@ -1103,6 +1135,13 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-prototype.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#gallery .container .featured-project-5:hover {
+  opacity: 0.5;
 }
 
 #gallery .container .featured-project-6 {
@@ -1110,6 +1149,13 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-228b.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#gallery .container .featured-project-6:hover {
+  opacity: 0.5;
 }
 
 #gallery .container .featured-project-7 {
@@ -1117,6 +1163,13 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-edelweiss.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#gallery .container .featured-project-7:hover {
+  opacity: 0.5;
 }
 
 #gallery .container .featured-project-8 {
@@ -1124,6 +1177,13 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-netcry.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#gallery .container .featured-project-8:hover {
+  opacity: 0.5;
 }
 
 #gallery .container .featured-project-9 {
@@ -1131,6 +1191,13 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-hypers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#gallery .container .featured-project-9:hover {
+  opacity: 0.5;
 }
 
 #gallery .container .featured-project-10 {
@@ -1138,6 +1205,13 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-sxiv.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#gallery .container .featured-project-10:hover {
+  opacity: 0.5;
 }
 
 #gallery .container .featured-project-11 {
@@ -1145,6 +1219,13 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-trinity.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#gallery .container .featured-project-11:hover {
+  opacity: 0.5;
 }
 
 #gallery .container .featured-project-12 {
@@ -1152,6 +1233,13 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/portfolio/mobile/image-paramour.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#gallery .container .featured-project-12:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 768px) {
