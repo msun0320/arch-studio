@@ -246,8 +246,12 @@ header nav {
           align-items: center;
 }
 
-header nav .logo {
+header nav .logo-link .logo {
   width: 7.7rem;
+}
+
+header nav .menu-togglers {
+  cursor: pointer;
 }
 
 header nav .menu-togglers .icon-close {
@@ -293,8 +297,10 @@ header nav .nav-links ul li a {
         -ms-flex-align: start;
             align-items: start;
   }
-  header nav .logo {
+  header nav .logo-link {
     margin-right: 7.9rem;
+  }
+  header nav .logo-link .logo {
     width: auto;
   }
   header nav .menu-togglers {
@@ -332,7 +338,7 @@ header nav .nav-links ul li a {
         -ms-flex-align: start;
             align-items: start;
   }
-  header nav .logo {
+  header nav .logo-link {
     margin-right: 9.5rem;
   }
   header nav .menu-togglers {

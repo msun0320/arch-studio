@@ -30,11 +30,15 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    .logo {
-      width: 7.7rem;
+    .logo-link {
+      .logo {
+        width: 7.7rem;
+      }
     }
 
     .menu-togglers {
+      cursor: pointer;
+
       .icon-close {
         display: none;
       }
@@ -81,9 +85,12 @@ header {
       justify-content: flex-start;
       align-items: start;
 
-      .logo {
+      .logo-link {
         margin-right: 7.9rem;
-        width: auto;
+
+        .logo {
+          width: auto;
+        }
       }
 
       .menu-togglers {
@@ -127,7 +134,7 @@ header {
       justify-content: flex-start;
       align-items: start;
 
-      .logo {
+      .logo-link {
         margin-right: 9.5rem;
       }
 
