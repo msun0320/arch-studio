@@ -21,5 +21,5 @@ window.addEventListener('resize', () => {
   menu.style.display = isLargeScreen ? 'block' : 'none';
   hamburgerIcon.style.display = isLargeScreen ? 'none' : 'inline';
   closeIcon.style.display = isLargeScreen ? 'inline' : 'none';
-  document.body.style.position = isLargeScreen ? 'static' : 'fixed';
+  document.body.style.position = 'static';
 });
