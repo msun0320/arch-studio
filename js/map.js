@@ -1,8 +1,18 @@
 'use strict';
 
-const map = L.map('map').setView([35.860119, -86.660156], 13);
-const marker1 = L.marker([35.860119, -86.660156]).addTo(map);
-const marker2 = L.marker([30.266666, -97.73333]).addTo(map);
+const locations = [
+  {
+    name: 'main office',
+    location: [35.860119, -86.660156],
+  },
+  {
+    name: 'office II',
+    location: [30.266666, -97.73333],
+  },
+];
+
+// Setup map
+const map = L.map('map').setView(locations[0].location, 13);
 
 L.tileLayer(
   'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
@@ -18,7 +28,19 @@ L.tileLayer(
   }
 ).addTo(map);
 
-map.fitBounds([
-  [35.860119, -86.660156],
-  [30.266666, -97.73333],
-]);
+// Add marker
+const marker1 = L.marker(locations[0].location).addTo(map);
+const marker2 = L.marker(locations[1].location).addTo(map);
+
+map.fitBounds([locations[0].location, locations[1].location]);
+
+// Show popup
+const mainOfficeButton = document.querySelector('.main-office .btn-text');
+const officeIIButton = document.querySelector('.office-II .btn-text');
+
+const showPopup = location => {
+  L.popup().setLatLng(location.location).setContent(location.name).openOn(map);
+};
+
+mainOfficeButton.addEventListener('click', () => showPopup(locations[0]));
+officeIIButton.addEventListener('click', () => showPopup(locations[1]));
