@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const hamburgerIcon = document.querySelector('.icon-hamburger');
 const closeIcon = document.querySelector('.icon-close');
@@ -9,7 +9,7 @@ const toggleMenu = () => {
   menu.style.display = isOpen ? 'none' : 'block';
   hamburgerIcon.style.display = isOpen ? 'inline' : 'none';
   closeIcon.style.display = isOpen ? 'none' : 'inline';
-  document.body.style.position = isOpen ? 'static' : 'fixed';
+  // document.body.style.position = isOpen ? 'static' : 'fixed';
 };
 
 hamburgerIcon.addEventListener('click', toggleMenu);
@@ -22,5 +22,5 @@ window.addEventListener('resize', () => {
   menu.style.display = isLargeScreen ? 'block' : 'none';
   hamburgerIcon.style.display = isLargeScreen ? 'none' : 'inline';
   closeIcon.style.display = isLargeScreen ? 'inline' : 'none';
-  document.body.style.position = 'static';
+  // document.body.style.position = 'static';
 });
